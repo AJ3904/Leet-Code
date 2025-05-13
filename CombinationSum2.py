@@ -11,6 +11,7 @@ class Solution(object):
             result.append(list(combination))
             return
         for i in range(start, len(candidates)):
+            #Check for duplicates
             if i > start and candidates[i] == candidates [i - 1]:
                 continue
             if candidates[i] > target:
